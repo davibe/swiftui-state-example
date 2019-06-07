@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  events-swift
+//  swiftui-example
 //
 //  Created by Davide Bertola on 06/06/2019.
 //  Copyright © 2019 Davide Bertola. All rights reserved.
@@ -13,15 +13,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    let state = GenericBindable(value: [])
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        // Use a UIHostingController as window root view controller
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: ContentView())
+
+        // Use a UIHostingController as window root view controller
+
+        window.rootViewController = UIHostingController(rootView:
+            ContentView().environmentObject(state)
+        )
+        
+        state.value = ["ciao", "mondo"]
+        
         self.window = window
         window.makeKeyAndVisible()
     }
@@ -53,7 +61,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    
 }
-
