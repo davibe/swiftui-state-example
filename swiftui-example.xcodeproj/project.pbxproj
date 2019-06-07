@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4B529922AA3A370031F2C9 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B529822AA3A370031F2C9 /* State.swift */; };
+		0D4B529B22AA3A610031F2C9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B529A22AA3A610031F2C9 /* String.swift */; };
 		0D68EABC22A95FE200325D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D68EABB22A95FE200325D5A /* AppDelegate.swift */; };
 		0D68EABE22A95FE200325D5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D68EABD22A95FE200325D5A /* SceneDelegate.swift */; };
 		0D68EAC022A95FE200325D5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D68EABF22A95FE200325D5A /* ContentView.swift */; };
@@ -16,7 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D68EAB822A95FE200325D5A /* events-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "events-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4B529822AA3A370031F2C9 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		0D4B529A22AA3A610031F2C9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0D64440722AA48F2004C6BDF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0D68EAB822A95FE200325D5A /* swiftui-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D68EABB22A95FE200325D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D68EABD22A95FE200325D5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D68EABF22A95FE200325D5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,7 +45,7 @@
 		0D68EAAF22A95FE200325D5A = {
 			isa = PBXGroup;
 			children = (
-				0D68EABA22A95FE200325D5A /* events-swift */,
+				0D68EABA22A95FE200325D5A /* swiftui-example */,
 				0D68EAB922A95FE200325D5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +53,12 @@
 		0D68EAB922A95FE200325D5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D68EAB822A95FE200325D5A /* events-swift.app */,
+				0D68EAB822A95FE200325D5A /* swiftui-example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D68EABA22A95FE200325D5A /* events-swift */ = {
+		0D68EABA22A95FE200325D5A /* swiftui-example */ = {
 			isa = PBXGroup;
 			children = (
 				0D68EABB22A95FE200325D5A /* AppDelegate.swift */,
@@ -63,8 +68,11 @@
 				0D68EAC622A95FE300325D5A /* LaunchScreen.storyboard */,
 				0D68EAC922A95FE300325D5A /* Info.plist */,
 				0D68EAC322A95FE300325D5A /* Preview Content */,
+				0D4B529822AA3A370031F2C9 /* State.swift */,
+				0D4B529A22AA3A610031F2C9 /* String.swift */,
+				0D64440722AA48F2004C6BDF /* README.md */,
 			);
-			path = "events-swift";
+			path = "swiftui-example";
 			sourceTree = "<group>";
 		};
 		0D68EAC322A95FE300325D5A /* Preview Content */ = {
@@ -78,9 +86,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D68EAB722A95FE200325D5A /* events-swift */ = {
+		0D68EAB722A95FE200325D5A /* swiftui-example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D68EACC22A95FE300325D5A /* Build configuration list for PBXNativeTarget "events-swift" */;
+			buildConfigurationList = 0D68EACC22A95FE300325D5A /* Build configuration list for PBXNativeTarget "swiftui-example" */;
 			buildPhases = (
 				0D68EAB422A95FE200325D5A /* Sources */,
 				0D68EAB522A95FE200325D5A /* Frameworks */,
@@ -90,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = "events-swift";
-			productName = "events-swift";
-			productReference = 0D68EAB822A95FE200325D5A /* events-swift.app */;
+			name = "swiftui-example";
+			productName = "swiftui-example";
+			productReference = 0D68EAB822A95FE200325D5A /* swiftui-example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0D68EAB322A95FE200325D5A /* Build configuration list for PBXProject "events-swift" */;
+			buildConfigurationList = 0D68EAB322A95FE200325D5A /* Build configuration list for PBXProject "swiftui-example" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D68EAB722A95FE200325D5A /* events-swift */,
+				0D68EAB722A95FE200325D5A /* swiftui-example */,
 			);
 		};
 /* End PBXProject section */
@@ -148,7 +156,9 @@
 			files = (
 				0D68EABC22A95FE200325D5A /* AppDelegate.swift in Sources */,
 				0D68EABE22A95FE200325D5A /* SceneDelegate.swift in Sources */,
+				0D4B529B22AA3A610031F2C9 /* String.swift in Sources */,
 				0D68EAC022A95FE200325D5A /* ContentView.swift in Sources */,
+				0D4B529922AA3A370031F2C9 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +295,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "events-swift/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "swiftui-example/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "events-swift/Info.plist";
+				INFOPLIST_FILE = "swiftui-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "it.dadeb.ios.events.events-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.dadeb.ios.events.swiftui-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,14 +314,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "events-swift/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "swiftui-example/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "events-swift/Info.plist";
+				INFOPLIST_FILE = "swiftui-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "it.dadeb.ios.events.events-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.dadeb.ios.events.swiftui-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D68EAB322A95FE200325D5A /* Build configuration list for PBXProject "events-swift" */ = {
+		0D68EAB322A95FE200325D5A /* Build configuration list for PBXProject "swiftui-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D68EACA22A95FE300325D5A /* Debug */,
@@ -330,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D68EACC22A95FE300325D5A /* Build configuration list for PBXNativeTarget "events-swift" */ = {
+		0D68EACC22A95FE300325D5A /* Build configuration list for PBXNativeTarget "swiftui-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D68EACD22A95FE300325D5A /* Debug */,
