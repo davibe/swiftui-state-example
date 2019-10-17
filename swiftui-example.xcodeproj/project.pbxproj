@@ -15,6 +15,7 @@
 		0D68EAC222A95FE300325D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D68EAC122A95FE200325D5A /* Assets.xcassets */; };
 		0D68EAC522A95FE300325D5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D68EAC422A95FE300325D5A /* Preview Assets.xcassets */; };
 		0D68EAC822A95FE300325D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D68EAC622A95FE300325D5A /* LaunchScreen.storyboard */; };
+		0DEE77152358FDE40046F0A8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEE77142358FDE40046F0A8 /* SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0D68EAC422A95FE300325D5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D68EAC722A95FE300325D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D68EAC922A95FE300325D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DEE77142358FDE40046F0A8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEE77152358FDE40046F0A8 /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,7 @@
 			children = (
 				0D68EABA22A95FE200325D5A /* swiftui-example */,
 				0D68EAB922A95FE200325D5A /* Products */,
+				0DEE77132358FDE40046F0A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +85,14 @@
 				0D68EAC422A95FE300325D5A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0DEE77132358FDE40046F0A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE77142358FDE40046F0A8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

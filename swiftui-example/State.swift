@@ -10,30 +10,14 @@ import Foundation
 import Combine
 import SwiftUI
 
-class GenericBindable<T> : BindableObject {
-    let didChange = PassthroughSubject<T, Never>()
+class GenericBindable<T> : ObservableObject {
+    let objectWillChange = PassthroughSubject<T, Never>()
     var value: T {
         didSet {
-            didChange.send(value)
+            objectWillChange.send(value)
         }
     }
     init(value: T) {
         self.value = value
     }
-}
-
-class State: BindableObject  {
-    
-    let didChange = PassthroughSubject<State, Never>()
-    
-    var logs = [String]() {
-        didSet {
-            didChange.send(self)
-        }
-    }
-    
-    func log(line: Int = #line, file: String = #file, function: String = #function) {
-        logs += ["\(function)"]
-    }
-    
 }

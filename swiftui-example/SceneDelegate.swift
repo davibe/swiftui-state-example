@@ -13,22 +13,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    let state = GenericBindable(value: [])
+    let state = GenericBindable(value: ["ciao"])
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        let window = UIWindow(frame: UIScreen.main.bounds)
+        guard let windowScene = scene as? UIWindowScene else { return }
+
+        let window = UIWindow(windowScene: windowScene)
+        
 
         // Use a UIHostingController as window root view controller
 
         window.rootViewController = UIHostingController(rootView:
-            ContentView().environmentObject(state)
+            ContentView(state: state)
         )
-        
-        state.value = ["ciao", "mondo"]
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.state.value = ["ciao", "mondo"]
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            self.state.value = ["ciao", "mondo", "porco"]
+        }
         
         self.window = window
         window.makeKeyAndVisible()

@@ -12,10 +12,10 @@ import Combine
 
 struct ContentView : View {
     
-    @EnvironmentObject var state: State
+    @ObservedObject var state: GenericBindable<[String]>
     
     var body: some View {
-        List(state.logs) { log in
+        List(state.value) { log in
             Text(log)
         }
     }
@@ -25,7 +25,11 @@ struct ContentView : View {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(State())
+        ContentView(
+            state: GenericBindable(
+                value: ["ciao", "mondo"]
+            )
+        )
     }
 }
 #endif
